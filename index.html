@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+    <link rel="stylesheet" href="/assets/styles/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="title-paragraph-container">
+        <h1 class="title">Learn to code by watching others</h1>
+        <p class="paragraph">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="form-container">
+        <div class="payment-container">
+          <span class="strong">Try it free 7 days</span> then $20/mo. thereafter
+        </div>
+        <form id="form">
+          <div id="inputs-container" class="inputs-container">
+            <div class="first-name-container">
+              <input
+                id="inp-first-name"
+                type="text"
+                class="inp-first-name"
+                placeholder="First Name"
+              />
+              <p id="first-name-error" class="error-message">
+                First Name cannot be empty
+              </p>
+            </div>
+            <div class="last-name-container">
+              <input
+                id="inp-last-name"
+                type="text"
+                class="inp-last-name"
+                placeholder="Last Name"
+              />
+              <p id="last-name-error" class="error-message">
+                Last Name cannot be empty
+              </p>
+            </div>
+            <div class="email-container">
+              <input
+                type="text"
+                id="inp-email"
+                class="inp-email"
+                placeholder="Email Adress"
+              />
+              <p id="email-error" class="error-message">
+                Looks like this is not an email
+              </p>
+            </div>
+            <div class="password-container">
+              <input
+                type="password"
+                id="inp-password"
+                class="inp-password"
+                placeholder="Password"
+              />
+              <p id="password-error" class="error-message">
+                Password cannot be empty
+              </p>
+            </div>
+            <div>
+              <button id="claim" class="claim" value="button">
+                CLAIM YOUR FREE TRIAL
+              </button>
+            </div>
+            <p class="terms">
+              By clicking the button, you are agreeing to our
+              <span class="terms-services">Terms and Services</span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="/assets/scripts/scripts.js"></script>
+  </body>
+</html>

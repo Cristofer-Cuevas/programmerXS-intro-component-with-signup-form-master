@@ -1,0 +1,174 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(/assets/images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+}
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.title-paragraph-container {
+  width: 80%;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 93%);
+}
+
+.paragraph {
+  line-height: 1.6rem;
+  color: hsl(0, 0%, 93%);
+}
+
+.payment-container {
+  width: 90%;
+  height: 4rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  background-color: hsl(248, 32%, 49%);
+  text-align: center;
+  color: white;
+  padding-top: 1rem;
+  line-height: 1.5rem;
+  box-shadow: 0rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.strong {
+  display: block;
+  font-weight: 700;
+}
+
+.inputs-container {
+  display: grid;
+  width: 90%;
+  margin: 1rem auto;
+  background-color: red;
+  grid-template-columns: 80%;
+  place-content: center;
+  grid-template-rows: repeat(5, 4.5rem);
+  background-color: white;
+  border-radius: 0.5rem;
+  height: 30rem;
+  /* row-gap: 1rem; */
+  box-shadow: 0rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.inp-last-name {
+  width: 2rem;
+}
+
+.claim {
+  width: 100%;
+  height: 3.5rem;
+  background-color: hsl(153, 59%, 51%);
+  border: 0px solid transparent;
+  border-radius: 0.3rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.inp-first-name,
+.inp-last-name,
+.inp-email,
+.inp-password {
+  width: 99%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 0.1px solid rgba(0, 0, 0, 0.2);
+}
+
+.first-name-container,
+.last-name-container,
+.email-container,
+.password-container {
+  position: relative;
+}
+
+.error-message {
+  display: none;
+  position: absolute;
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  right: 0;
+  font-size: 0.7rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.show-message-error {
+  display: block;
+}
+
+.icon-error {
+  background-image: url(/assets/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+.inp-first-name::placeholder,
+.inp-last-name::placeholder,
+.inp-email::placeholder,
+.inp-password::placeholder {
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+.terms {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin: 0 0 0 0;
+  font-size: 0.8rem;
+}
+
+.terms-services {
+  color: hsl(0, 100%, 74%);
+  line-height: 1.5rem;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 45rem) {
+  body {
+    background-image: url(/assets/images/bg-intro-desktop.png);
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-paragraph-container {
+    width: 40%;
+    text-align: initial;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .form-container {
+    width: 45%;
+  }
+
+  .payment-container {
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+
+  .strong {
+    display: inline;
+  }
+
+  .terms {
+    font-size: 0.6rem;
+  }
+}
